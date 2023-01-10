@@ -1,0 +1,147 @@
+.span-contato {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 40px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+label {
+    color: aliceblue;
+    font-size: 18px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+}
+
+label:hover {
+    color: #d21617;
+}
+
+input {
+    font-weight: bold;
+    border-style: solid;
+    outline: none;
+    color: #fff; 
+    text-align:center;
+    border-color: gray;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.form-1 {
+    margin-left: 20%;
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-2 {
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(7 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 15px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    border-color: gray;
+    border-style: solid;
+    background-color: transparent;
+    outline: none;
+}
+
+.button-1 {
+    width: 120px;
+    height: 50px;
+    background-color: #d21617;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+.button-1:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#banner-contato {
+    background-image: url('https://www.thebatman.com/assets/images/ipadbannerportrait.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+
+@media (max-width:768px){
+    .form-1 {
+        height: 150px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .form-2 {
+        height: 300px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    textarea {
+        margin: 0;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-3 {
+        width: auto;
+        margin-top: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-1 {
+        margin: 0;
+    }
+
+    #banner-contato {
+        background-position: 85%;
+        object-fit: fill;
+    }
+}

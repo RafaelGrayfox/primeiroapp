@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #000;
+}
+
+.cards-content {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://www.mordeo.org/download/21868/');
+}
+
+.banner-2 {
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/02/Zoe-CNN-Batman.png?w=390');
+}
+
+.banner-3 {
+    background-image: url('https://i.pinimg.com/originals/65/1c/c8/651cc8cf1ebac2a83861b4ad9242eaa5.jpg');
+}
+
+@media(max-width: 768px) {
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}

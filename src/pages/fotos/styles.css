@@ -1,0 +1,84 @@
+.span-fotos{
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+.backgroundBanner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 10%;
+    background-image: url("../../assets/background.jpg");
+}
+
+.img {
+    height: 180px;
+    width: 350px;
+    border-width: 1px;
+    border-color: #fff;
+    border-style: solid;
+    transition: 0.8s;
+    background-color: transparent;
+    outline: none;
+    opacity: 22%;
+}
+
+.img-container { 
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    align-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    background-color: transparent;
+    margin-left: 30px;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    border-color: #d21617;
+    opacity: 1;
+}
+
+@media(max-width: 768px) {
+    .backgroundBanner {
+        width: 100%;
+        height: 100%;
+        background-position: 50%;
+    }
+
+    .img {
+        height: 120px;
+        width: 250px;
+    }
+
+    .span-fotos {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .img-container {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+        margin-left: 10px;
+    }
+}
